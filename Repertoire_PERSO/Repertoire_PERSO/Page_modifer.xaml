@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Repertoire_PERSO.Page_modifer">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="{StaticResource PageMargin}">
+            <Editor x:Name="Nom"
+                    Placeholder="Nom"
+                    Text="{Binding nom}"/>
+            <Editor x:Name="prenom"
+                    Placeholder="Prenom"
+                    Text="{Binding prenom}"/>
+            <Editor x:Name="tel"
+                    Placeholder="Numéro"
+                    Text="{Binding numero}"/>
+            <Editor x:Name="mail"
+                    Placeholder="email"
+                    Text="{Binding mail}"/>
+            <Editor x:Name="adresse"
+                    Placeholder="numéro et rue"
+                    Text="{Binding rue}"/>
+            <Editor x:Name="ville"
+                    Placeholder="Ville"
+                    Text="{Binding ville}"/>
+            <Editor x:Name="Pseudo_twitter"
+                    Placeholder="Pseudo Twitter"
+                    Text="{Binding PseudoTwitter}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Text="Valider"
+                    Clicked="Modify_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

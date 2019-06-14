@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Repertoire_PERSO.Afficher_Details">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="{StaticResource PageMargin}">
+
+                <Label Grid.Row="1"
+               Text="Nom :" />
+                <Label x:Name="Nom" Grid.Row="1"
+                    Text="{Binding nom}"/>
+                <Label Grid.Row="1"
+               Text="" />
+                <Label Grid.Row="1"
+               Text="Prénom :" />
+                <Label x:Name="prenom"
+                    Text="{Binding prenom}"/>
+                <Label Grid.Row="1"
+               Text="" />
+
+                <Label Grid.Row="1"
+               Text="Téléphone :" />
+                <Label x:Name="tel"
+                    Text="{Binding numero}"/>
+                <Label Grid.Row="1"
+               Text="" />
+
+                <Label Grid.Row="1"
+               Text="Email :" />
+                <Label x:Name="mail"
+                    Text="{Binding mail}"/>
+                <Label Grid.Row="1"
+               Text="" />
+
+                <Label Grid.Row="1"
+               Text="Adresse :" />
+                <Label x:Name="adresse"
+                    Text="{Binding rue}"/>
+                <Label Grid.Row="1"
+               Text="" />
+
+                <Label Grid.Row="1"
+               Text="Ville :" />
+                <Label x:Name="ville"
+                    Text="{Binding ville}"/>
+                <Label Grid.Row="1"
+               Text="" />
+
+                <Label Grid.Row="1"
+               Text="Pseudo Twitter :" />
+                <Label x:Name="Pseudo_twitter"
+                    Text="{Binding PseudoTwitter}"/>
+                <Label Grid.Row="1"
+               Text="" />
+
+
+
+                <Label Grid.Row="1"
+               Text="Ville :" />
+                <Label Grid.Row="1"
+               Text="{Binding Title}" />
+
+                <Label Grid.Row="2"
+               Text="Température:" />
+                <Label Grid.Row="2"
+               Text="{Binding Main.Temperature}" />
+                
+                <Label Grid.Row="1"
+               Text="" />
+                <Label Grid.Row="1"
+               Text="" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Column="0"
+            x:Name="Bouton_SupprimerContact"
+            Text="Suppr contact"
+                Clicked="Supprimer_Contact_Click"
+               />
+
+                    <Button Grid.Column="1" 
+            x:Name="Bouton_ModifierContact"
+            Text="Modifier contact"
+                Clicked="Modifier_Contact_Click"
+                />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

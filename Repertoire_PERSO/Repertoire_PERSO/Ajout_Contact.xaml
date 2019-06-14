@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Repertoire_PERSO.Ajout_Contact">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="{StaticResource PageMargin}">
+            <Editor x:Name="Champ_prenom" 
+                    Placeholder="Prénom"
+                    Text="{Binding prenom}" />
+            <Editor x:Name="Champ_nom"
+                Placeholder="Nom"
+                Text="{Binding nom}" />
+            <Editor x:Name="Champ_email"
+                Placeholder="Email"
+                Text="{Binding mail}" />
+            <Editor x:Name="Champ_numero"
+                Placeholder="Numéro"
+                Text="{Binding numero}"/>
+            <Editor x:Name="adresse"
+                    Placeholder="Numéro et nom rue"
+                    Text="{Binding rue}"/>
+            <Editor x:Name="ville"
+                    Placeholder="Ville"
+                    Text="{Binding ville}"/>
+            <Editor x:Name="Champ_pseudoTwitter"
+                Placeholder="Pseudo Twitter"
+                Text="{Binding PseudoTwitter}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Save"
+                        Clicked="OnSaveButtonClicked" 
+                        HorizontalOptions="Center"
+                        >
+                </Button>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
