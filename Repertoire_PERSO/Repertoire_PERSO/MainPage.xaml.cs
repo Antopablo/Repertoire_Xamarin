@@ -32,13 +32,15 @@ namespace Repertoire_PERSO
 
         
 
-        private void OrderByName()
+        private void OrderByName(ListView L)
         {
+            
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            
 
             ListeView.ItemsSource = await App.Database.GetContactsAsync();
             ListeView.HasUnevenRows = true;

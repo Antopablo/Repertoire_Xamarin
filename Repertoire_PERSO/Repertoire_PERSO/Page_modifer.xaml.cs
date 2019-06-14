@@ -37,7 +37,7 @@ namespace Repertoire_PERSO
             contact.ville = ville.Text;
             contact.rue = adresse.Text;
             await App.Database.SaveContactAsync(contact);
-            await Navigation.PopAsync();
+            await Navigation.PopToRootAsync();
         }
     }
 }
