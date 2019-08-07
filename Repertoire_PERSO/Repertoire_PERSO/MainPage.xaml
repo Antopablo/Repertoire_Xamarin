@@ -34,7 +34,7 @@
         
         </Grid>
 
-        <ListView x:Name="ListeView"  ItemsSource="{Binding Contact}"
+        <ListView x:Name="Listeview"  ItemsSource="{Binding Contact}"
           HasUnevenRows="true"
           ItemSelected="ListView_ItemSelected">
         <ListView.ItemTemplate>
@@ -42,6 +42,7 @@
                 <ViewCell>
                     <Grid Padding="10">
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
@@ -55,12 +56,11 @@
                            HeightRequest="60"
                            WidthRequest="60" />
                         <Label Grid.Column="1"
+                                Grid.Row="0"
                            Text="{Binding prenom}"
-                           FontAttributes="Bold" />
-                            <Label Grid.Column="1"
-                           Text="{Binding nom}"
-                           FontAttributes="Bold" />
-                            <Label Grid.Row="2"
+                           FontAttributes="Bold" />                                                
+                        
+                        <Label Grid.Row="1"
                            Grid.Column="1"
                            Text="{Binding numero}"
                            VerticalOptions="End" />

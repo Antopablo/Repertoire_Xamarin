@@ -19,9 +19,43 @@ namespace Repertoire_PERSO
 
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
+            
             var contact = (Contact)BindingContext;
-            await App.Database.SaveContactAsync(contact);
-            await Navigation.PopAsync();
+            if (contact.numero == null)
+            {
+            _ = DisplayAlert("Alert", "Vous devez un numéro valide", "OK");
+            } else
+            {
+                if (IsNumeric(contact.numero))
+                {
+                    if (contact.nom == null && contact.prenom == null)
+                    {
+                        _ = DisplayAlert("Alert", "Vous devez un nom", "OK");
+                    }
+                    else
+                    {
+                        await App.Database.SaveContactAsync(contact);
+                        await Navigation.PopAsync();
+                    }
+                } else
+                {
+                    _ = DisplayAlert("Alert", "Vous devez un numéro valide", "OK");
+                }
+
+            }
+        }
+
+        private bool IsNumeric (string s)
+        {
+            int r;
+            if (int.TryParse(s, out r))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

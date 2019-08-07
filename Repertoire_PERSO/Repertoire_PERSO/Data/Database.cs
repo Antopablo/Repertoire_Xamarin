@@ -26,6 +26,7 @@ namespace Repertoire_PERSO.Data
         {
             return _database.Table<Contact>()
                             .Where(i => i.ID == id)
+                            .OrderBy(p => p.prenom)
                             .FirstOrDefaultAsync();            
         }
 

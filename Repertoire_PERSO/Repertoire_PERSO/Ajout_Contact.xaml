@@ -11,7 +11,8 @@
             <StackLayout Margin="{StaticResource PageMargin}">
                 <Editor x:Name="Champ_prenom"
                     Placeholder="Prénom"
-                    Text="{Binding prenom}" />
+                    Text="{Binding prenom}"
+                    />
                 <Editor x:Name="Champ_nom"
                 Placeholder="Nom"
                 Text="{Binding nom}" />
@@ -20,7 +21,8 @@
                 Text="{Binding mail}" />
                 <Editor x:Name="Champ_numero"
                 Placeholder="Numéro"
-                Text="{Binding numero}"/>
+                Text="{Binding numero}"
+                Keyboard="Numeric"/>
                 <Editor x:Name="adresse"
                     Placeholder="Numéro et nom rue"
                     Text="{Binding rue}"/>

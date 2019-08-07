@@ -25,6 +25,8 @@ namespace Repertoire_PERSO
 
             ListeContact = new List<Contact>();
             _restService = new RestService();
+
+            
         }
 
         protected override async void OnAppearing()
@@ -32,8 +34,8 @@ namespace Repertoire_PERSO
             base.OnAppearing();
             
 
-            ListeView.ItemsSource = await App.Database.GetContactsAsync();
-            ListeView.HasUnevenRows = true;
+            Listeview.ItemsSource = await App.Database.GetContactsAsync();
+            Listeview.HasUnevenRows = true;
         }
 
         async void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -46,9 +48,13 @@ namespace Repertoire_PERSO
 
         async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushAsync(new Afficher_Details((Contact)ListeView.SelectedItem));
+            await Navigation.PushAsync(new Afficher_Details((Contact)Listeview.SelectedItem));
         }
 
         
     }
 }
+
+
+//voir pour trier selon prénom
+// enlever les retour à la ligne pour création + modification
