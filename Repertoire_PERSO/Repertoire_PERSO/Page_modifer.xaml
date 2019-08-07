@@ -8,22 +8,22 @@
     
     <ContentPage.Content>
         <StackLayout Margin="{StaticResource PageMargin}">
-            <Editor x:Name="Nom"
+          <Entry x:Name="Nom"
                     Placeholder="Nom"
                     Text="{Binding nom}"/>
-            <Editor x:Name="prenom"
+          <Entry x:Name="prenom"
                     Placeholder="Prenom"
                     Text="{Binding prenom}"/>
-            <Editor x:Name="tel"
+          <Entry x:Name="tel"
                     Placeholder="Numéro"
                     Text="{Binding numero}"/>
-            <Editor x:Name="mail"
+          <Entry x:Name="mail"
                     Placeholder="email"
                     Text="{Binding mail}"/>
-            <Editor x:Name="adresse"
+          <Entry x:Name="adresse"
                     Placeholder="numéro et rue"
                     Text="{Binding rue}"/>
-            <Editor x:Name="ville"
+          <Entry x:Name="ville"
                     Placeholder="Ville"
                     Text="{Binding ville}"/>
            

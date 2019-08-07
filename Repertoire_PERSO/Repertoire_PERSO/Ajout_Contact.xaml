@@ -9,24 +9,24 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="{StaticResource PageMargin}">
-                <Editor x:Name="Champ_prenom"
+                <Entry x:Name="Champ_prenom"
                     Placeholder="Prénom"
                     Text="{Binding prenom}"
                     />
-                <Editor x:Name="Champ_nom"
+                <Entry x:Name="Champ_nom"
                 Placeholder="Nom"
                 Text="{Binding nom}" />
-                <Editor x:Name="Champ_email"
+                <Entry x:Name="Champ_email"
                 Placeholder="Email"
                 Text="{Binding mail}" />
-                <Editor x:Name="Champ_numero"
+                <Entry x:Name="Champ_numero"
                 Placeholder="Numéro"
                 Text="{Binding numero}"
                 Keyboard="Numeric"/>
-                <Editor x:Name="adresse"
+                <Entry x:Name="adresse"
                     Placeholder="Numéro et nom rue"
                     Text="{Binding rue}"/>
-                <Editor x:Name="ville"
+                <Entry x:Name="ville"
                     Placeholder="Ville"
                     Text="{Binding ville}"/>
 
