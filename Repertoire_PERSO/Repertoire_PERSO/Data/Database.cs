@@ -19,7 +19,7 @@ namespace Repertoire_PERSO.Data
 
         public Task<List<Contact>> GetContactsAsync()
         {
-            return _database.Table<Contact>().OrderBy(p => p.nom).ToListAsync();
+            return _database.Table<Contact>().OrderBy(p => p.prenom).ToListAsync();
         }
 
         public Task<Contact> GetContactAsync(int id)

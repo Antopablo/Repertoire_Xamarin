@@ -54,7 +54,3 @@ namespace Repertoire_PERSO
         
     }
 }
-
-
-//voir pour trier selon prénom
-// enlever les retour à la ligne pour création + modification
