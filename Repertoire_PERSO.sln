@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repertoire_PERSO.Android", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repertoire_PERSO.iOS", "Repertoire_PERSO\Repertoire_PERSO.iOS\Repertoire_PERSO.iOS.csproj", "{12A32B3E-0CE8-438B-9C91-8FA8D4F6026D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repertoire_PERSO", "Repertoire_PERSO\Repertoire_PERSO\Repertoire_PERSO.csproj", "{D4DC65D3-5E8F-49C5-8A03-421AF608B16D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repertoire", "Repertoire_PERSO\Repertoire_PERSO\Repertoire.csproj", "{D4DC65D3-5E8F-49C5-8A03-421AF608B16D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

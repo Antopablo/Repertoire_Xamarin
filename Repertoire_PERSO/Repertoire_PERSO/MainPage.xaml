@@ -57,7 +57,10 @@
                         <Label Grid.Column="1"
                            Text="{Binding prenom}"
                            FontAttributes="Bold" />
-                        <Label Grid.Row="1"
+                            <Label Grid.Column="1"
+                           Text="{Binding nom}"
+                           FontAttributes="Bold" />
+                            <Label Grid.Row="2"
                            Grid.Column="1"
                            Text="{Binding numero}"
                            VerticalOptions="End" />

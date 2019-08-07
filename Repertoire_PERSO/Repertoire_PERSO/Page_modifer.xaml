@@ -26,9 +26,7 @@
             <Editor x:Name="ville"
                     Placeholder="Ville"
                     Text="{Binding ville}"/>
-            <Editor x:Name="Pseudo_twitter"
-                    Placeholder="Pseudo Twitter"
-                    Text="{Binding PseudoTwitter}"/>
+           
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />

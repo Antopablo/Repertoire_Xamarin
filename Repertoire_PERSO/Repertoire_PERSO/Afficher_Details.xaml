@@ -50,15 +50,7 @@
                 <Label Grid.Row="1"
                Text="" />
 
-                <Label Grid.Row="1"
-               Text="Pseudo Twitter :" />
-                <Label x:Name="Pseudo_twitter"
-                    Text="{Binding PseudoTwitter}"/>
-                <Label Grid.Row="1"
-               Text="" />
-
-
-
+   
                 <Label Grid.Row="1"
                Text="Ville :" />
                 <Label Grid.Row="1"
@@ -67,7 +59,7 @@
                 <Label Grid.Row="2"
                Text="Température:" />
                 <Label Grid.Row="2"
-               Text="{Binding Main.Temperature}" />
+               Text="{Binding Main.Temperature}"/>
                 
                 <Label Grid.Row="1"
                Text="" />

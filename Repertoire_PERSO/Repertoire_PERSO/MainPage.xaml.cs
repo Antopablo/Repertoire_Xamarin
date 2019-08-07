@@ -15,9 +15,6 @@ namespace Repertoire_PERSO
     public partial class MainPage : ContentPage
     {
         public IList<Contact> ListeContact { get; private set; }
-        public const string APITwitter = "https://api.twitter.com/1.1/statuses/user_timeline.json";
-        public const string Twitter_KEY = "mnKaIsXI3WfOL1XjwAFVVr1OM";
-        public const string Twitter_KEY_SECRET = "zQ9LIRZJmPEoNkdTu2iveilGXYZLb2jjZnrOqklY33F9K4qwDj";
         public const string OpenWeatherMapEndpoint = "https://api.openweathermap.org/data/2.5/weather";
         public const string OpenWeatherMapAPIKey = "9813f94d8ac56780465d6a3503a30a53";
         RestService _restService;
@@ -28,13 +25,6 @@ namespace Repertoire_PERSO
 
             ListeContact = new List<Contact>();
             _restService = new RestService();
-        }
-
-        
-
-        private void OrderByName(ListView L)
-        {
-            
         }
 
         protected override async void OnAppearing()

@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="{StaticResource PageMargin}">
-                <Editor x:Name="Champ_prenom" 
+                <Editor x:Name="Champ_prenom"
                     Placeholder="Prénom"
                     Text="{Binding prenom}" />
                 <Editor x:Name="Champ_nom"
@@ -27,9 +27,7 @@
                 <Editor x:Name="ville"
                     Placeholder="Ville"
                     Text="{Binding ville}"/>
-                <Editor x:Name="Champ_pseudoTwitter"
-                Placeholder="Pseudo Twitter"
-                Text="{Binding PseudoTwitter}"/>
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />

@@ -24,7 +24,6 @@ namespace Repertoire_PERSO
             prenom.Text = cont.prenom;
             tel.Text = cont.numero;
             mail.Text = cont.mail;
-            Pseudo_twitter.Text = cont.PseudoTwitter;
             ville.Text = cont.ville;
             adresse.Text = cont.rue;
             _restService = new RestService();

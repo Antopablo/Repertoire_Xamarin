@@ -9,7 +9,7 @@ namespace Repertoire_PERSO.modele
     {
         public Contact()
         {
-            ImageUrl = "img_xamarin.jpg";
+            ImageUrl = "headlogo.png";
         }
 
         [PrimaryKey, AutoIncrement]
@@ -19,7 +19,6 @@ namespace Repertoire_PERSO.modele
         public string mail { get; set; }
         public string numero { get; set; }
         public string ImageUrl { get; set; }
-        public string PseudoTwitter { get; set; }
         public string rue { get; set; }
         public string ville { get; set; }
 

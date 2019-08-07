@@ -22,7 +22,6 @@ namespace Repertoire_PERSO
             prenom.Text = contact.prenom;
             tel.Text = contact.numero;
             mail.Text = contact.mail;
-            Pseudo_twitter.Text = contact.PseudoTwitter;
             ville.Text = contact.ville;
             adresse.Text = contact.rue;
         }
@@ -33,7 +32,6 @@ namespace Repertoire_PERSO
             contact.prenom = prenom.Text;
             contact.numero = tel.Text;
             contact.mail = mail.Text;
-            contact.PseudoTwitter = Pseudo_twitter.Text;
             contact.ville = ville.Text;
             contact.rue = adresse.Text;
             await App.Database.SaveContactAsync(contact);
