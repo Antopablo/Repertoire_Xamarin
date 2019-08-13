@@ -21,27 +21,22 @@ namespace Repertoire_PERSO
         {
             
             var contact = (Contact)BindingContext;
-            if (contact.numero == null)
+            if (contact.nom == null && contact.prenom == null)
             {
-            _ = DisplayAlert("Alert", "Vous devez un numéro valide", "OK");
-            } else
+                _ = DisplayAlert("Alert", "Vous devez saisir un nom", "OK");
+            }
+            else
             {
-                if (IsNumeric(contact.numero))
+                if (contact.numero == null || !IsNumeric(contact.numero))
                 {
-                    if (contact.nom == null && contact.prenom == null)
-                    {
-                        _ = DisplayAlert("Alert", "Vous devez un nom", "OK");
-                    }
-                    else
-                    {
-                        await App.Database.SaveContactAsync(contact);
-                        await Navigation.PopAsync();
-                    }
-                } else
-                {
-                    _ = DisplayAlert("Alert", "Vous devez un numéro valide", "OK");
+                    _ = DisplayAlert("Alert", "Vous devez saisir un numéro valide", "OK");
                 }
+                else
+                {
+                    await App.Database.SaveContactAsync(contact);
+                    await Navigation.PopAsync();
 
+                }
             }
         }
 
@@ -54,6 +49,11 @@ namespace Repertoire_PERSO
             }
             else
             {
+                if (s[0] == '+')
+                {
+                    s = s.Substring(1, s.Length);
+                    IsNumeric(s);
+                }
                 return false;
             }
         }
